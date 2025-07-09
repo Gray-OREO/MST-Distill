@@ -95,7 +95,7 @@ Run `test-T.py` or `test-S.py` to test multimodal and unimodal models respective
 | CrisisMMD-V2 |    512     |     5e-3      |    Image-Text    |
 | NYU-Depth-V2 |     6      |     1e-4      |    RGB-Depth     |
 
-You can find the corresponding teacher and student network names in the `getTmodules` and `getSmodules` functions in the `utils.py` file.
+You can find the corresponding teacher and student network names in the `get_Tmodules` and `get_Smodules` functions in the `utils.py` file.
 
 ### Important Notes
 
