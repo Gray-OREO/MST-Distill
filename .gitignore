@@ -209,3 +209,4 @@ __marimo__/
 # Local configuration files
 /checkpoints/
 /logs/
+/metadata/

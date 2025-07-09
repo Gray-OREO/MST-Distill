@@ -112,7 +112,7 @@ If you find this work helpful for your research, please consider citing our pape
 ```bibtex
 @inproceedings{mst-distill2025,
   title={MST-Distill: Mixture of Specialized Teachers for Cross-Modal Knowledge Distillation},
-  author={Anonymous Author(s)},
+  author = {Li, Hui and Yang, Pengfei and Chen, Juanyang and Dong, Le and Chen, Yanxin and Wang, Quan},
   booktitle={Proceedings of the 33rd ACM International Conference on Multimedia},
   year={2025},
   publisher={ACM}
