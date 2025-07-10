@@ -1,6 +1,6 @@
 # MST-Distill
 
-**Paper**: [MST-Distill: Mixture of Specialized Teachers for Cross-Modal Knowledge Distillation]()
+**Paper**: MST-Distill: Mixture of Specialized Teachers for Cross-Modal Knowledge Distillation  [![arXiv](https://img.shields.io/badge/arXiv-2507.07015-b31b1b.svg)](https://arxiv.org/abs/2507.07015)
 
 **Authors**: Hui Li, Pengfei Yang, Juanyang Chen, Le Dong, Yanxin Chen, Quan Wang
 
