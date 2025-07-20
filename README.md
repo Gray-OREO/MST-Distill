@@ -45,7 +45,7 @@ Download and prepare the datasets:
 
 Then, you can generate index meta files for data partitioning by running the `indices_gen.py` file, or download the meta files consistent with ours from [here](https://drive.google.com/drive/folders/11p7GQ9iazVogsImgPvsJjTWNXTCHYCD3?usp=sharing).
 
-We also provide some preprocessed data for [download](https://drive.google.com/drive/folders/11p7GQ9iazVogsImgPvsJjTWNXTCHYCD3?usp=sharing). Alternatively, you can download the original datasets from their respective papers and process them using the code in the `data_preprocess` directory.
+We also provide some preprocessed data for download ([Google Drive](https://drive.google.com/drive/folders/11p7GQ9iazVogsImgPvsJjTWNXTCHYCD3?usp=sharing) | [Hugging Face](https://huggingface.co/Gray1y/datasets)). Alternatively, you can download the original datasets from their respective papers and process them using the code in the `data_preprocess` directory.
 
 ### 2. Cross-modal Knowledge Distillation
 
