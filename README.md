@@ -90,7 +90,7 @@ Run `test-T.py` or `test-S.py` to test multimodal and unimodal models respective
 ### Dataset-Specific Parameters
 
 | Dataset      | Batch Size | Learning Rate | Modality (m1-m2) | Model Name (mm, m1, m2) |
-| ------------ | :--------: | :-----------: | :--------------: | :-----------------: |
+| ------------ | :--------: | :-----------: | :--------------: | ----------------- |
 | AV-MNIST     |    512     |     1e-4      |   Image-Audio    | CNN-I, LeNet5, ThreeLayerCNN-A |
 | RAVDESS      |     32     |     1e-4      |   Visual-Audio   | DSCNN-I, VisualBranchNet, AudioBranchNet |
 | VGGSound-50k |    512     |     1e-4      |   Visual-Audio   | DSCNN-VGGS-I, VisualBranchNet-VGGS, AudioBranchNet-VGGS |
