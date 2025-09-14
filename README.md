@@ -89,13 +89,13 @@ Run `test-T.py` or `test-S.py` to test multimodal and unimodal models respective
 
 ### Dataset-Specific Parameters
 
-| Dataset      | Batch Size | Learning Rate | Modality (m1-m2) |
-| ------------ | :--------: | :-----------: | :--------------: |
-| AV-MNIST     |    512     |     1e-4      |   Image-Audio    |
-| RAVDESS      |     32     |     1e-4      |   Visual-Audio   |
-| VGGSound-50k |    512     |     1e-4      |   Visual-Audio   |
-| CrisisMMD-V2 |    512     |     5e-3      |    Image-Text    |
-| NYU-Depth-V2 |     6      |     1e-4      |    RGB-Depth     |
+| Dataset      | Batch Size | Learning Rate | Modality (m1-m2) | Model Name (mm, m1, m2) |
+| ------------ | :--------: | :-----------: | :--------------: | :-----------------: |
+| AV-MNIST     |    512     |     1e-4      |   Image-Audio    | CNN-I, LeNet5, ThreeLayerCNN-A |
+| RAVDESS      |     32     |     1e-4      |   Visual-Audio   | DSCNN-I, VisualBranchNet, AudioBranchNet |
+| VGGSound-50k |    512     |     1e-4      |   Visual-Audio   | DSCNN-VGGS-I, VisualBranchNet-VGGS, AudioBranchNet-VGGS |
+| CrisisMMD-V2 |    512     |     5e-3      |    Image-Text    | MLP-I, MLP-Vb, MLP-Tb |
+| NYU-Depth-V2 |     6      |     1e-4      |    RGB-Depth     | FuseNet-I, FuseNet-RGBbranch, FuseNet-Dbranch |
 
 You can find the corresponding teacher and student network names in the `get_Tmodules` and `get_Smodules` functions in the `utils.py` file.
 
