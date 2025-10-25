@@ -1,6 +1,6 @@
 # MST-Distill
 
- [![arXiv](https://img.shields.io/badge/arXiv-2507.07015-b31b1b.svg)](https://arxiv.org/abs/2507.07015) [![ACM MM](https://img.shields.io/badge/ACM%20MM-2025-007ACC.svg?style=flat-square)]()
+ [![arXiv](https://img.shields.io/badge/arXiv-2507.07015-b31b1b.svg)](https://arxiv.org/abs/2507.07015) [![ACM MM](https://img.shields.io/badge/ACM%20MM-2025-007ACC.svg?style=flat-square)](https://doi.org/10.1145/3746027.3755276)
 
 **Paper**: MST-Distill: Mixture of Specialized Teachers for Cross-Modal Knowledge Distillation
 
@@ -112,14 +112,21 @@ You can use the `get_Tmodules` and `get_Smodules` functions in `utils.py` to fin
 If you find this work helpful for your research, please consider citing our paper:
 
 ```bibtex
-@misc{li2025mstdistillmixturespecializedteachers,
-      title={MST-Distill: Mixture of Specialized Teachers for Cross-Modal Knowledge Distillation}, 
-      author={Hui Li and Pengfei Yang and Juanyang Chen and Le Dong and Yanxin Chen and Quan Wang},
-      year={2025},
-      eprint={2507.07015},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2507.07015}, 
+@inproceedings{10.1145/3746027.3755276,
+author = {Li, Hui and Yang, Pengfei and Chen, Juanyang and Dong, Le and Chen, Yanxin and Wang, Quan},
+title = {MST-Distill: Mixture of Specialized Teachers for Cross-Modal Knowledge Distillation},
+year = {2025},
+isbn = {9798400720352},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3746027.3755276},
+doi = {10.1145/3746027.3755276},
+booktitle = {Proceedings of the 33rd ACM International Conference on Multimedia},
+pages = {1588–1597},
+numpages = {10},
+keywords = {cross-modality, knowledge distillation, mixture of teachers},
+location = {Dublin, Ireland},
+series = {MM '25}
 }
 ```
 
