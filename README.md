@@ -116,15 +116,12 @@ If you find this work helpful for your research, please consider citing our pape
 author = {Li, Hui and Yang, Pengfei and Chen, Juanyang and Dong, Le and Chen, Yanxin and Wang, Quan},
 title = {MST-Distill: Mixture of Specialized Teachers for Cross-Modal Knowledge Distillation},
 year = {2025},
-isbn = {9798400720352},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
-url = {https://doi.org/10.1145/3746027.3755276},
 doi = {10.1145/3746027.3755276},
 booktitle = {Proceedings of the 33rd ACM International Conference on Multimedia},
 pages = {1588–1597},
 numpages = {10},
-keywords = {cross-modality, knowledge distillation, mixture of teachers},
 location = {Dublin, Ireland},
 series = {MM '25}
 }
