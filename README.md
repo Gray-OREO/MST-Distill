@@ -17,7 +17,12 @@ MST-Distill addresses the key challenges of path selection and knowledge drift i
 ![Overall model architecture of ADCMT.](ims/Figs_framework.jpg)
 
 ---
+## 🔔 Updates
 
+- **2026.03**: Added a new argument `args.hidden_dim_factor` to control the parameter scale of **MaskNet**. This reduces the model size when the default hidden dimension (half of the feature dimension) is still large. The value may require dataset- and feature-layer-specific tuning.
+
+- **2025.07**: Initial release of the **MST-Distill** framework and the **CMKD benchmark**.
+---
 ## 📋 Requirements
 
 **Main Dependencies:**

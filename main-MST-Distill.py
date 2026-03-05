@@ -42,10 +42,12 @@ if __name__ == '__main__':
     # Hyper-parameters
     parser.add_argument('--batch_size', type=int, default=512,
                         help='batch size for training')
+    parser.add_argument('--hidden_dim_factor', type=int, default=2,
+                        help='hidden dimension factor for MaskNets')
     parser.add_argument('--mask_layer_num', type=int, default=2,
-                        help='num of MM-teacher models')
+                        help='num of layers for teacher feature masking')
     parser.add_argument('--mask_head_num', type=int, default=3,
-                        help='num of MM-teacher models')
+                        help='num of heads for each MaskNet')
     parser.add_argument('--k', type=int, default=1,
                         help='Top-k ways for MTGdistillation')
     parser.add_argument('--lb_mode', type=str, default='KL',
@@ -56,9 +58,9 @@ if __name__ == '__main__':
                         help='weight for Stu. model loss_Top-K_kl')
     parser.add_argument('--w_lb', type=float, default=1.,
                         help='weight for Stu. model loss_lb')
-    parser.add_argument('--epochs_s1', type=int, default=100,
+    parser.add_argument('--epochs_s1', type=int, default=1,
                         help='epochs for training')
-    parser.add_argument('--epochs_s2', type=int, default=100,
+    parser.add_argument('--epochs_s2', type=int, default=1,
                         help='epochs for training')
     parser.add_argument('--epochs', type=int, default=100,
                         help='epochs for training')

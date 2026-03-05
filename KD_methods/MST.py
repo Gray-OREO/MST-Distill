@@ -98,24 +98,24 @@ def get_MSTmodules(args):
     for i, (feat_name, feat_shape) in enumerate(zip(T_feat_names, T_feat_shapes)):
         if len(feat_shape) == 1:
             feat_dim = feat_shape[0]
-            MaskNets_T.append(MaskNet_1d(feat_dim, hidden_dim=feat_dim//(2*args.mask_head_num)*args.mask_head_num, num_heads=args.mask_head_num))
+            MaskNets_T.append(MaskNet_1d(feat_dim, hidden_dim=feat_dim//(args.hidden_dim_factor*args.mask_head_num)*args.mask_head_num, num_heads=args.mask_head_num))
         else:
             feat_dim = feat_shape[0]
             if feat_shape[-1] == 1:
-                MaskNets_T.append(MaskNet_1d(feat_dim, hidden_dim=feat_dim//(2*args.mask_head_num)*args.mask_head_num, num_heads=args.mask_head_num))
+                MaskNets_T.append(MaskNet_1d(feat_dim, hidden_dim=feat_dim//(args.hidden_dim_factor*args.mask_head_num)*args.mask_head_num, num_heads=args.mask_head_num))
             else:
-                MaskNets_T.append(MaskNet_2d(feat_dim, hidden_dim=feat_dim//(2*args.mask_head_num)*args.mask_head_num, num_heads=args.mask_head_num))
+                MaskNets_T.append(MaskNet_2d(feat_dim, hidden_dim=feat_dim//(args.hidden_dim_factor*args.mask_head_num)*args.mask_head_num, num_heads=args.mask_head_num))
 
     for i, (feat_name, feat_shape) in enumerate(zip(A_feat_names, A_feat_shapes)):
         if len(feat_shape) == 1:
             feat_dim = feat_shape[0]
-            MaskNets_A.append(MaskNet_1d(feat_dim, hidden_dim=feat_dim//(2*args.mask_head_num)*args.mask_head_num, num_heads=args.mask_head_num))
+            MaskNets_A.append(MaskNet_1d(feat_dim, hidden_dim=feat_dim//(args.hidden_dim_factor*args.mask_head_num)*args.mask_head_num, num_heads=args.mask_head_num))
         else:
             feat_dim = feat_shape[0]
             if feat_shape[-1] == 1:
-                MaskNets_A.append(MaskNet_1d(feat_dim, hidden_dim=feat_dim//(2*args.mask_head_num)*args.mask_head_num, num_heads=args.mask_head_num))
+                MaskNets_A.append(MaskNet_1d(feat_dim, hidden_dim=feat_dim//(args.hidden_dim_factor*args.mask_head_num)*args.mask_head_num, num_heads=args.mask_head_num))
             else:
-                MaskNets_A.append(MaskNet_2d(feat_dim, hidden_dim=feat_dim//(2*args.mask_head_num)*args.mask_head_num, num_heads=args.mask_head_num))
+                MaskNets_A.append(MaskNet_2d(feat_dim, hidden_dim=feat_dim//(args.hidden_dim_factor*args.mask_head_num)*args.mask_head_num, num_heads=args.mask_head_num))
 
     # Loading mask_layer_num for DTD
     assert args.mask_layer_num <= len(T_feat_names) and args.mask_layer_num <= len(A_feat_names), \
